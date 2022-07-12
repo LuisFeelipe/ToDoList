@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    font-family: 'Comfortaa', cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+#task-input{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+#addTask{
+    border: 1px solid rgb(0, 100, 105);
+    border-radius: 5px;
+    padding: 5px;
+    color:rgb(25, 113, 121);
+    background-color:white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#addTask:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#tasks{
+    margin: 15px 0px 15px 0px;
+    text-transform: capitalize;
+}
+
+.task-item{
+    margin: 5px 0px 5px 0px;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#clearList{
+    border: 1px solid rgb(170, 60, 0);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white; 
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#clearList:hover{
+    background-color: rgb(170, 65, 65);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    #addTask{
+        margin-top: 5px;
+    }
+    #clearList{
+        margin-top: 30px;
+    }
+    
+}
